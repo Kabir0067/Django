@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of Tasks</h1>
+    {% for task in news %}
+    
+    <table>
+        <tr>
+            
+            <th> <a>{{task.title}}</a></th> 
+            <th> <a>{{task.due_date}}</a></th> 
+            <th> <a>{{task.created_at}}</a></th> 
+            <th> <a>{{task.user}}</a></th> 
+       </tr>
+
+    </table>   
+
+    {% endfor %}
+
+    
+</body>
+</html>
