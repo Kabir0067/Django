@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publishers</title>
+</head>
+<body>
+    <h1>Publishers</h1>
+    <ul>
+        {% for publisher in publishers %}
+            <li>
+                <strong>{{ publisher.name }}</strong><br>
+                Address: {{ publisher.address }}<br>
+                Website: <a href="{{ publisher.website }}">{{ publisher.website }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

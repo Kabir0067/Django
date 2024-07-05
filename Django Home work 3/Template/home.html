@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"></head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Your One-Stop Solution</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Website</p>
+    </footer>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'hom_page' %}"></a>
+        <a href="{% url 'user_page' %}"></a>
+        <a href="{%  url 'cours_page' %}"></a>
+        <a href=""></a>
+    </header>
+    <h1>Hello world</h1>
+    <div>
+        {% block  content %}
+ 
+
+        {% block  content %}
+
+
+    </div> 
+<footer>
+    <h1>Football</h1>
+</footer>
+
+</body>
+
+</html>

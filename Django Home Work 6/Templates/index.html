@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}"></head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home'%}">Home</a></li>
+                <li><a href="{% url 'about'%}">About</a></li>
+            </ul>
+        </nav>
+        <style>
+            hero{
+              background-image: url("{% static 'image/D:\Ҷанго\Django Home Work 2\static\img\how-to-insert-background-image-in-html.webp' %}");;
+            }
+        </style>
+    </header>
+    {% block content %}
+    <main>
+        <section class="hero">
+            <h2>Your One-Stop Solution</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+        </section>
+    </main>
+
+     {% endblock content %}
+       <footer>
+        <p>&copy; 2024 Our Website</p>
+    </footer>
+</body>
+</html>
