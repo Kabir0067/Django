@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+button {
+  padding: 12px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+.delete-button:hover {
+  background-color: #c82333;
+}
+.cancel-button {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 4px;
+
+}
+.cancel-button:hover {
+  background-color: rgb(109, 139, 135);
+  color: white;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+.button-container button {
+  margin: 5px 0;
+}
+a {
+  display: block;
+  color: #007bff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #0056b3;
+}

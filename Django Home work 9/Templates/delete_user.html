@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete User</title>
+    <link rel="stylesheet" href="{% static 'css/delete.css'%}">
+  </head>
+  <body>
+    <form action="{% url 'delete_user' user.id %}" method="post">
+      <h1>Are you sure you want to delete {{ user.first_name }} {{ user.last_name }}?</h1>
+      {% csrf_token %}
+      <div class="button-container">
+        <button type="submit" class="delete-button">Yes, Delete</button>
+        <a href="{% url 'read_users' %}" class="cancel-button">Cancel</a>
+      </div>
+    </form>
+  </body>
+</html>
