@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ object.title }}</h1>
+  <p>{{ object.description }}</p>
+  <p>Assigned to: {{ object.assigned_to.username }}</p>
+  <p>Done: {{ object.is_done }}</p>
+  <a href="{% url 'task-update' object.pk %}">Edit</a>
+  <a href="{% url 'task-delete' object.pk %}">Delete</a>
+{% endblock %}
