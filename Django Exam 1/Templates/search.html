@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block content %}
+<h1>Search Results</h1>
+<div class="search-container">
+    <form method="get" action="{% url 'search_posts' %}">
+        <input type="text" name="q" placeholder="Search posts..." value="{{ request.GET.q }}">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<ul>
+    {% for post in posts %}
+    <li><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> by {{ post.user.username }} on {{ post.created_on }}</li>
+    {% empty %}
+    <p>No posts found.</p>
+    {% endfor %}
+</ul>
+{% endblock %}
+
